@@ -26,7 +26,6 @@ const (
 
 func main() {
 	var exitCh = make(chan struct{})
-	//func New(keyFile string, keyID string, serviceAccountID string) (*TTSYandex, error) {
 	newTTS, err := pr_yandex_tts.NewYandexTTS(keyFile, keyID, serviceAccountID, FolderId)
 	if err != nil {
 		//panic(fmt.Sprintf("%+v", err))
@@ -37,7 +36,6 @@ func main() {
 	}
 	fmt.Printf("%+v", newTTS)
 	audioFileWav, err := newTTS.MakeAudioWav("еще одна новая проверка связи 2")
-	//err = err.(StatusError)
 	if err != nil {
 		//panic(fmt.Sprintf("%+v", err))
 		fmt.Println(err.Error())
@@ -50,7 +48,6 @@ func main() {
 	}
 
 	audioFileOgg, err = newTTS.MakeAudioOgg("еще одна новая проверка связи с OGG")
-	//err = err.(StatusError)
 	if err != nil {
 		//panic(fmt.Sprintf("%+v", err))
 		fmt.Println(err.Error())
