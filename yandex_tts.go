@@ -50,7 +50,7 @@ type TTSYandex struct {
 	ExpiredTokenTime      time.Time
 	guardUpdateToken      sync.RWMutex
 	//guardExpiredTokenTime sync.RWMutex
-	guardUpdateProcess    sync.Mutex //
+	//guardUpdateProcess    sync.Mutex //
 	UpdateInProcess       bool
 	errorUpdateCount      int
 	request               Request
