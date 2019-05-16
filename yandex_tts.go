@@ -49,13 +49,13 @@ type TTSYandex struct {
 	KeyFile               string
 	ExpiredTokenTime      time.Time
 	guardUpdateToken      sync.RWMutex
-	guardExpiredTokenTime sync.RWMutex
-	guardUpdateProcess    sync.Mutex //здесь просто mutex нужен
+	//guardExpiredTokenTime sync.RWMutex
+	guardUpdateProcess    sync.Mutex //
 	UpdateInProcess       bool
 	errorUpdateCount      int
 	request               Request
 	PrivateKey            *rsa.PrivateKey
-	UpdateTokenChannel    chan struct{} //канал  для немедленного обновления токена
+	//UpdateTokenChannel    chan struct{} //канал  для немедленного обновления токена
 }
 
 //iamtoken and exp time  from  request
