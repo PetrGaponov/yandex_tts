@@ -7,7 +7,7 @@ TODO:
 Make optional save IAMToken in Redis
 Make more  parameters in func for generate audio data ( ADD rate,  speed, emotion, voice )
 */
-package pr_yandex_tts
+package yandex_tts
 
 import (
 	"bytes"
