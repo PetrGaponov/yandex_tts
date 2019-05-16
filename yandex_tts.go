@@ -1,7 +1,7 @@
 /*
 Library for  use  Yandex cloud TTS
-Can auto update  Auth Keys(IAmToken), save audio to wave AND alaw from lpcm without external sox utility (Purpose: make integrity for  Asterisk,
-mono, rate 8000 Hz)
+Can auto update  Auth Keys(IAmToken), save audio to wave AND alaw from lpcm without external sox utility (Purpose: make 
+integrity for  Asterisk,mono, rate 8000 Hz)
 Can save to ogg file optionaly
 TODO:
 Make optional save IAMToken in Redis
